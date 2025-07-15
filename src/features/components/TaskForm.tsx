@@ -39,6 +39,7 @@ export const TaskForm = () => {
         status: 'To Do',
         priority: 'Low',
         date: new Date().toISOString(),
+        createdAt: new Date().toISOString(),
       });
     }
   }, [existingTask, id]);
