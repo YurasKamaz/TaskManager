@@ -141,6 +141,7 @@ export const TaskForm = () => {
       <DateField
         data-container-id="dateFieldIdTwo"
         onChange={(e) => setForm((prev) => ({ ...prev, date: e.target.value }))}
+        value={form.date?.length === 10 ? form.date : '__.__.____'}
       />
 
       <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px' }}>
