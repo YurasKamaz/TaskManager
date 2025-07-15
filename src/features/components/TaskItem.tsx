@@ -27,7 +27,7 @@ export const TaskItem = ({ task, onEdit, onDelete }: TaskItemProps) => {
           Created at: {new Date(task.createdAt).toLocaleDateString('ru-RU')}
         </T>
         <T font="Body/Body 2 Short" as="p">
-          Expired at: {task.date}
+          Expired at: {task.date.length === 10 ? task.date : new Date(task.date).toLocaleDateString('ru-RU')}
         </T>
       </div>
 
