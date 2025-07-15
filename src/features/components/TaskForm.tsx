@@ -59,7 +59,6 @@ export const TaskForm = () => {
       };
       dispatch(addTask(newTask));
     } else {
-      console.log(form.date);
       dispatch(updateTask({ id: id!, task: form }));
     }
     navigate('/');
